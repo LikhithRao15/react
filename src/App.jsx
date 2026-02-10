@@ -1,33 +1,21 @@
 import React,{use, useState} from 'react'
+import Sample_Hook from './Sample_Hook'
+import Card from './components/Card'
 
 
 function App() {
-    const [value,setvalue]=useState(0)
+    let myObj = {
+        name:"Likhith Rao",
+        age:21,
+        city:"Mangalore"
+    }
     
-
-    const addValue = () => {
-        if(value>=20){
-            alert("value cannot be more than 20")
-            return
-        }
-        setvalue(value+1)
-        console.log(value)
-    }
-
-    const removeValue = () => {
-        if(value<=0){
-            alert("value cannot be less than 0")
-            return
-        }
-        setvalue(value-1)
-        console.log(value)
-    }
   return (
-    <>
-    <h3>the value :{value}</h3>
-    <button onClick={addValue}>ADD</button><br />
-    <button onClick={removeValue}>REMOVE</button>
-  </>
+    <div className='flex gap-4 m-5'>
+    {/* <Sample_Hook /> */}
+    <Card name="Orange" obj={myObj}/>
+    <Card name="Mango" />
+ </div>
   )
 }
 
