@@ -2,6 +2,7 @@ import React,{use, useState} from 'react'
 import Sample_Hook from './Sample_Hook'
 import Card from './components/Card'
 import BgChange from './components/BgChange'
+import Password from './components/Password'
 
 
 
@@ -18,7 +19,9 @@ function App() {
      {/* <Sample_Hook /> */}
      {/* <Card name="Orange" obj={myObj}/> */}
      {/* <Card name="Mango" /> */}
-    <BgChange />
+    {/* <BgChange /> */}
+    <Password />
+    
  </div>
   )
 }
